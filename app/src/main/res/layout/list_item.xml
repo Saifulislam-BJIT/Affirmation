@@ -12,10 +12,11 @@
         android:padding="8dp">
 
         <ImageView
-            android:layout_width="46dp"
-            android:layout_height="46dp"
+            android:id="@+id/profileAvatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
             android:importantForAccessibility="no"
-            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+            android:scaleType="centerCrop"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -27,14 +28,22 @@
                 android:id="@+id/displayTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
 
             <TextView
                 android:id="@+id/displayId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 />
+
+            <TextView
+                android:id="@+id/displayBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"/>
         </LinearLayout>
     </LinearLayout>
 

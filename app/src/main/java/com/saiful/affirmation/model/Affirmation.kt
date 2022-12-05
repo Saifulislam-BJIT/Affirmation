@@ -1,3 +1,10 @@
 package com.saiful.affirmation.model
 
-data class Affirmation(val displayName: String, val displayId: String)
+import androidx.annotation.DrawableRes
+
+data class Affirmation(
+    val displayName: String,
+    val displayId: String,
+    @DrawableRes val imageResourceId: Int,
+    val displayBloodGroup: String
+)
